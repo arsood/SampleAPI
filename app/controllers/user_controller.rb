@@ -7,6 +7,10 @@ class UserController < ApplicationController
 		render :json => '{"result":"User removed successfully"}'
 	end
 
+	def update
+		render :json => '{"result":"Thanks for the update!"}'
+	end
+
 	def user_check
 		user_check = User.where(username: params[:username]).first
 		if user_check == nil
