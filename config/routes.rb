@@ -2,7 +2,9 @@ Backbone::Application.routes.draw do
 
   resources 'route'
 
-  post 'user' => 'user#user_check'
+  resources 'user'
+
+  post 'user/check' => 'user#user_check'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
