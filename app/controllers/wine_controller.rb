@@ -4,6 +4,11 @@ class WineController < ApplicationController
 		render :json => wine_data
 	end
 
+	def show
+		wine_data = Wine.find(params[:id])
+		render :json => wine_data
+	end
+
 	def create
 		render :text => 'Success! You created a new record'
 	end

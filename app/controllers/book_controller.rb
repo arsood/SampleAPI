@@ -33,4 +33,9 @@ class BookController < ApplicationController
 
 		render :json => '{"result":"Removal successful!"}'
 	end
+
+	def show
+		book_info = Book.find(params[:id])
+		render :json => book_info
+	end
 end
