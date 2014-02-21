@@ -11,9 +11,11 @@ class BookController < ApplicationController
 		new_book.author = params[:author]
 		new_book.release_date = params[:releaseDate]
 
-		new_book.save
-
-		render :json => '{"result":"Create successful!"}'
+		if new_book.save
+			render :json => '{"result":"Create successful!"}'
+		else
+			render :json => '{"result":"There was an error..."}'
+		end
 	end
 
 	def update
@@ -23,15 +25,19 @@ class BookController < ApplicationController
 		book.author = params[:author]
 		book.release_date = params[:releaseDate]
 
-		book.save
-
-		render :json => '{"result":"Update successful!"}'
+		if book.save
+			render :json => '{"result":"Update successful!"}'
+		else
+			render :json => '{"result":"There was an error..."}'
+		end
 	end
 
 	def destroy
-		Book.find(params[:id]).destroy
-
-		render :json => '{"result":"Removal successful!"}'
+		if Book.find(params[:id]).destroy
+			render :json => '{"result":"Removal successful!"}'
+		else
+			render :json => '{"result":"There was an error..."}'
+		end
 	end
 
 	def show
