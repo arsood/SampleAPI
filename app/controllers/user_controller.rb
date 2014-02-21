@@ -1,4 +1,8 @@
 class UserController < ApplicationController
+	def index
+		render :json => '{"result":"Thanks for the GET!"}'
+	end
+
 	def create
 		render :json => '{"result":"User created successfully!"}'
 	end
