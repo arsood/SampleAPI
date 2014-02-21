@@ -35,3 +35,21 @@ User.create(username: 'user3', password: 'password3')
 User.create(username: 'user4', password: 'password4')
 
 User.create(username: 'user5', password: 'password5')
+
+#Create some books
+
+Book.create(title: 'To Kill a Mockingbird', author: 'Harper Lee', release_date: Time.now)
+
+Book.create(title: 'The Great Gatsby', author: 'F Scott Fitzgerald', release_date: Time.now)
+
+Book.create(title: 'Les Miserables', author: 'Victor Hugo', release_date: Time.now)
+
+Book.create(title: 'Around the World in 80 Days', author: 'Jules Verne', release_date: Time.now)
+
+Book.create(title: 'Lean In', author: 'Sheryl Sandberg', release_date: Time.now)
+
+Book.create(title: 'The Four Hour Workweek', author: 'Tim Ferriss', release_date: Time.now)
+
+Book.create(title: 'Of Mice and Men', author: 'John Steinbeck', release_date: Time.now)
+
+Book.create(title: 'Romeo and Juliet', author: 'William Shakespeare', release_date: Time.now)

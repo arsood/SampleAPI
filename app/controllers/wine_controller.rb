@@ -1,4 +1,4 @@
-class RouteController < ApplicationController
+class WineController < ApplicationController
 	def index
 		wine_data = Wine.all
 		render :json => wine_data

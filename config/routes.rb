@@ -1,8 +1,12 @@
 Backbone::Application.routes.draw do
 
-  resources 'route'
+  resources 'wine'
 
   resources 'user'
+
+  resources 'backbone'
+
+  resources 'book'
 
   post 'user/check' => 'user#user_check'
   post 'form' => 'form#form_submit'
