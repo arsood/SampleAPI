@@ -1,5 +1,5 @@
 class UserController < ApplicationController
-	def index
+	def show
 		render :json => '{"result":"Thanks for the GET!"}'
 	end
 
