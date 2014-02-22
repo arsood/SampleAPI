@@ -29,10 +29,28 @@ class WineController < ApplicationController
 	end
 
 	def update
-		render :text => "Success! The record would have been updated"
+		new_wine = Wine.find(params[:id])
+
+		new_wine.name = params[:name]
+		new_wine.year = params[:year]
+		new_wine.grapes = params[:grapes]
+		new_wine.country = params[:country]
+		new_wine.region = params[:region]
+		new_wine.description = params[:description]
+		new_wine.picture = params[:picture]
+		
+		if new_wine.save
+			render :json => '{"result":"Success! You have updated the wine"}'
+		else
+			render :json => '{"result":"There was an error..."}'
+		end
 	end
 
 	def destroy
-		render :text => "Success! The record would have been deleted"
+		if Wine.find(params[:id]).destroy
+			render :text => "Success! The record would have been deleted"
+		else 
+			render :json => '{"result":"There was an error..."}'
+		end
 	end
 end
