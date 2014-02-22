@@ -48,7 +48,7 @@ class WineController < ApplicationController
 
 	def destroy
 		if Wine.find(params[:id]).destroy
-			render :text => "Success! The wine has been deleted"
+			render :json => '{"result":"The wine has been deleted"}'
 		else 
 			render :json => '{"result":"There was an error..."}'
 		end
