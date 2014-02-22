@@ -22,7 +22,7 @@ class WineController < ApplicationController
 		
 		if new_wine.save
 			new_id = new_wine.id
-			render :json => '{"id":' + new_id + ', "result":"Success! You created a new record"}'
+			render :json => '{"result":"Success! You created a new record"}'
 		else
 			render :json => '{"result":"There was an error..."}'
 		end
