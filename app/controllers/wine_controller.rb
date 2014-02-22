@@ -21,7 +21,8 @@ class WineController < ApplicationController
 		new_wine.picture = params[:picture]
 		
 		if new_wine.save
-			render :json => '{"result":"Success! You created a new record"}'
+			new_id = new_wine.id
+			render :json => '{"id":#{new_id}, result":"Success! You created a new record"}'
 		else
 			render :json => '{"result":"There was an error..."}'
 		end
