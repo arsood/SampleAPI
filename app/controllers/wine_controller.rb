@@ -1,13 +1,11 @@
 class WineController < ApplicationController
 	def index
 		wine_data = Wine.all
-		wine_data.picture = "http://s3-us-west-2.amazonaws.com/sandboxapi/" + wine_data.picture
 		render :json => wine_data
 	end
 
 	def show
 		wine_data = Wine.find(params[:id])
-		wine_data.picture = "http://s3-us-west-2.amazonaws.com/sandboxapi/" + wine_data.picture
 		render :json => wine_data
 	end
 
