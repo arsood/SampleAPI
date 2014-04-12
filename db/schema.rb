@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140304201532) do
+ActiveRecord::Schema.define(version: 20140412054811) do
 
   create_table "books", force: true do |t|
     t.string   "title"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20140304201532) do
     t.string   "region"
     t.text     "description"
     t.string   "picture"
+    t.integer  "price"
   end
 
 end
