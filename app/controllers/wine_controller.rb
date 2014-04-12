@@ -19,6 +19,7 @@ class WineController < ApplicationController
 		new_wine.region = params[:region]
 		new_wine.description = params[:description]
 		new_wine.picture = params[:picture]
+		new_wine.price = params[:price]
 		
 		if new_wine.save
 			new_id = new_wine.id
@@ -39,6 +40,7 @@ class WineController < ApplicationController
 		new_wine.region = params[:region]
 		new_wine.description = params[:description]
 		# new_wine.picture = params[:picture]
+		new_wine.price = params[:price]
 		
 		if new_wine.save
 			render :json => '{"result":"Success! You have updated the wine"}'
