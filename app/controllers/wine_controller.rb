@@ -18,12 +18,12 @@ class WineController < ApplicationController
 		new_wine.country = params[:country]
 		new_wine.region = params[:region]
 		new_wine.description = params[:description]
-		new_wine.picture = params[:picture]
+		new_wine.picture = "https://s3-us-west-2.amazonaws.com/sandboxapi/placeholder.jpg"
 		new_wine.price = params[:price]
 		
 		if new_wine.save
 			new_id = new_wine.id
-			render :json => '{"result":"Success! You created a new record"}'
+			render :json => new_wine
 		else
 			render :json => '{"result":"There was an error..."}'
 		end
@@ -43,7 +43,7 @@ class WineController < ApplicationController
 		new_wine.price = params[:price]
 		
 		if new_wine.save
-			render :json => '{"result":"Success! You have updated the wine"}'
+			render :json => new_wine
 		else
 			render :json => '{"result":"There was an error..."}'
 		end
