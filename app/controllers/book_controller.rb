@@ -12,7 +12,7 @@ class BookController < ApplicationController
 		new_book.release_date = params[:releaseDate]
 
 		if new_book.save
-			render :json => '{"result":"Create successful!"}'
+			render :json => new_book
 		else
 			render :json => '{"result":"There was an error..."}'
 		end
@@ -26,7 +26,7 @@ class BookController < ApplicationController
 		book.release_date = params[:releaseDate]
 
 		if book.save
-			render :json => '{"result":"Update successful!"}'
+			render :json => book
 		else
 			render :json => '{"result":"There was an error..."}'
 		end
