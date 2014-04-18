@@ -44,7 +44,7 @@ class UserController < ApplicationController
 	end
 
 	def user_check
-		user_check = User.where(firstname: params[:firstname]).where(lastname: params[:lastname]).try(:first)
+		user_check = User.where(username: params[:username]).try(:first)
 		if user_check == nil
 			render :json => '{"result":"none"}'
 		else
