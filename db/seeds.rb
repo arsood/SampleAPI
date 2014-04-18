@@ -26,15 +26,15 @@ Wine.create(name: 'DOMAINE DU BOUSCAT', year: '2009', grapes: 'Merlot', country:
 
 #Create some test users
 
-User.create(firstname: 'John', lastname: 'Smith', age: 15)
+User.create(firstname: 'John', lastname: 'Smith', age: 15, username: "jsmith")
 
-User.create(firstname: 'Katie', lastname: 'Holmes', age: 16)
+User.create(firstname: 'Katie', lastname: 'Holmes', age: 16, username: "kholmes")
 
-User.create(firstname: 'Johnny', lastname: 'Depp', age: 17)
+User.create(firstname: 'Johnny', lastname: 'Depp', age: 17, username: "jdepp")
 
-User.create(firstname: 'Matt', lastname: 'Damon', age: 18)
+User.create(firstname: 'Matt', lastname: 'Damon', age: 18, username: "mdamon")
 
-User.create(firstname: 'Johnny', lastname: 'Cash', age: 19)
+User.create(firstname: 'Johnny', lastname: 'Cash', age: 19, username: "jcash")
 
 #Create some books
 
