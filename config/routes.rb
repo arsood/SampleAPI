@@ -4,8 +4,6 @@ Backbone::Application.routes.draw do
 
   resources 'user'
 
-  resources 'backbone'
-
   resources 'book'
 
   post 'user/check' => 'user#user_check'
