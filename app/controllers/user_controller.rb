@@ -14,6 +14,7 @@ class UserController < ApplicationController
 		new_user.firstname = params["firstname"]
 		new_user.lastname = params["lastname"]
 		new_user.age = params["age"]
+		new_user.username = params["username"]
 
 		if new_user.save
 			render :json => new_user
