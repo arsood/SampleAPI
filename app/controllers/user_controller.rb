@@ -34,6 +34,7 @@ class UserController < ApplicationController
 		user_edit = User.find(params[:id])
 		user_edit.firstname = params["firstname"]
 		user_edit.lastname = params["lastname"]
+		user_edit.username = params["username"]
 		user_edit.age = params["age"]
 
 		if user_edit.save
