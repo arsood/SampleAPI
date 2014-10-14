@@ -8,6 +8,8 @@ Backbone::Application.routes.draw do
 
   post 'user/check' => 'user#user_check'
   post 'form' => 'form#form_submit'
+
+  get 'dynamicdom' => 'dynamicdom#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
