@@ -38,18 +38,18 @@ User.create(firstname: 'Johnny', lastname: 'Cash', age: 19, username: "jcash")
 
 #Create some books
 
-Book.create(title: 'To Kill a Mockingbird', author: 'Harper Lee', release_date: Time.now)
+Book.create(title: 'To Kill a Mockingbird', author: 'Harper Lee', release_date: Time.now, image: "https://s3-us-west-2.amazonaws.com/sandboxapi/to_kill_a_mockingbird.jpg")
 
-Book.create(title: 'The Great Gatsby', author: 'F Scott Fitzgerald', release_date: Time.now)
+Book.create(title: 'The Great Gatsby', author: 'F Scott Fitzgerald', release_date: Time.now, image: "https://s3-us-west-2.amazonaws.com/sandboxapi/great_gatsby.jpg")
 
-Book.create(title: 'Les Miserables', author: 'Victor Hugo', release_date: Time.now)
+Book.create(title: 'Les Miserables', author: 'Victor Hugo', release_date: Time.now, image: "https://s3-us-west-2.amazonaws.com/sandboxapi/les_miserables.jpg")
 
-Book.create(title: 'Around the World in 80 Days', author: 'Jules Verne', release_date: Time.now)
+Book.create(title: 'Around the World in 80 Days', author: 'Jules Verne', release_date: Time.now, image: "https://s3-us-west-2.amazonaws.com/sandboxapi/around_the_world_in_80_days.jpg")
 
-Book.create(title: 'Lean In', author: 'Sheryl Sandberg', release_date: Time.now)
+Book.create(title: 'Lean In', author: 'Sheryl Sandberg', release_date: Time.now, image: "https://s3-us-west-2.amazonaws.com/sandboxapi/lean_in.jpg")
 
-Book.create(title: 'The Four Hour Workweek', author: 'Tim Ferriss', release_date: Time.now)
+Book.create(title: 'The Four Hour Workweek', author: 'Tim Ferriss', release_date: Time.now, image: "https://s3-us-west-2.amazonaws.com/sandboxapi/four_hour_work_week.jpg")
 
-Book.create(title: 'Of Mice and Men', author: 'John Steinbeck', release_date: Time.now)
+Book.create(title: 'Of Mice and Men', author: 'John Steinbeck', release_date: Time.now, image: "https://s3-us-west-2.amazonaws.com/sandboxapi/of_mice_and_men.jpg")
 
-Book.create(title: 'Romeo and Juliet', author: 'William Shakespeare', release_date: Time.now)
+Book.create(title: 'Romeo and Juliet', author: 'William Shakespeare', release_date: Time.now, image: "https://s3-us-west-2.amazonaws.com/sandboxapi/romeo_and_juliet.jpg")

@@ -9,7 +9,8 @@ class BooksController < ApplicationController
 
 		new_book.title = params[:title]
 		new_book.author = params[:author]
-		new_book.release_date = params[:releaseDate]
+		new_book.release_date = params[:release_date]
+		new_book.image = params[:image]
 
 		if new_book.save
 			render :json => new_book
@@ -23,7 +24,8 @@ class BooksController < ApplicationController
 
 		book.title = params[:title]
 		book.author = params[:author]
-		book.release_date = params[:releaseDate]
+		book.release_date = params[:release_date]
+		book.image = params[:image]
 
 		if book.save
 			render :json => book
