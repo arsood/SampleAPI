@@ -1,4 +1,4 @@
-class UserController < ApplicationController
+class UsersController < ApplicationController
 	def index
 		all_users = User.all.order(firstname: :asc)
 		render :json => all_users

@@ -1,4 +1,4 @@
-class BookController < ApplicationController
+class BooksController < ApplicationController
 	def index
 		all_books = Book.all
 		render :json => all_books
