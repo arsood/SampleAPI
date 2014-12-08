@@ -8,6 +8,7 @@ class CreateWines < ActiveRecord::Migration
       t.string :grapes
       t.string :country
       t.string :region
+      t.integer :price
       t.text :description
       t.string :picture
     end
