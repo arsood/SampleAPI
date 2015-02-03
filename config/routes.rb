@@ -1,5 +1,7 @@
 Backbone::Application.routes.draw do
 
+  root "welcome#index"
+
   resources 'wines'
 
   resources 'users'
