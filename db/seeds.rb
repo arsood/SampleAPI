@@ -53,3 +53,15 @@ Book.create(title: 'The Four Hour Workweek', author: 'Tim Ferriss', release_date
 Book.create(title: 'Of Mice and Men', author: 'John Steinbeck', release_date: "Unknown 1937", image: "https://s3-us-west-2.amazonaws.com/sandboxapi/of_mice_and_men.jpg")
 
 Book.create(title: 'Romeo and Juliet', author: 'William Shakespeare', release_date: "Unknown 1597", image: "https://s3-us-west-2.amazonaws.com/sandboxapi/romeo_and_juliet.jpg")
+
+#Create some members
+
+Member.create(first_name: "Bob", last_name: "Smith", email: "bob@gmail.com")
+
+Member.create(first_name: "John", last_name: "Snyder", email: "jsnyder@gmail.com")
+
+Member.create(first_name: "Jake", last_name: "Kelly", email: "jkelly@yahoo.com")
+
+Member.create(first_name: "Martha", last_name: "Kline", email: "mkline@gmail.com")
+
+Member.create(first_name: "Becky", last_name: "Abrams", email: "babrams@yahoo.com")
