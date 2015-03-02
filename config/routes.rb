@@ -8,8 +8,8 @@ Backbone::Application.routes.draw do
 
   resources :books
 
-  resources :members, only: [:index, :show, :create, :destroy]
-  post "members/:id" => "members#update"
+  resources :members
+  post "members/:id/photo" => "members#upload"
 
   post 'user/check' => 'user#user_check'
   post 'form' => 'form#form_submit'
