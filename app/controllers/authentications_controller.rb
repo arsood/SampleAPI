@@ -14,7 +14,7 @@ class AuthenticationsController < ApplicationController
 	end
 
 	def oauth_respond
-		final_hash = AuthHash.where(token: params[:authId]).first
+		final_hash = AuthHash.where(token: params[:token]).first
 
 		render :json => final_hash.user_hash
 
