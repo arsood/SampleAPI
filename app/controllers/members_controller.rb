@@ -17,7 +17,11 @@ class MembersController < ApplicationController
 
 	def show
 		member = Member.find(params[:id])
-		render :json => member
+
+		member_json = member.as_json
+		member_json["avatar"] = member.avatar.url
+
+		render :json => member_json
 	end
 
 	def create
