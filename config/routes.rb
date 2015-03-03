@@ -15,4 +15,10 @@ Backbone::Application.routes.draw do
   post 'form' => 'form#form_submit'
 
   get 'dynamicdom' => 'dynamicdom#index'
+
+  #OAUTH
+  get "start_auth" => "authentications#oauth_start"
+  get "auth/:provider/callback" => "authentications#oauth_handler"
+  post "get_auth" => "authentications#oauth_respond"
+  get "auth/failure" => "authentications#failure"
 end
