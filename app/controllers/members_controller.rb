@@ -25,14 +25,14 @@ class MembersController < ApplicationController
 	end
 
 	def create
-		member = Member.create(first_name: params[:firstname], last_name: params[:lastname], email: params[:email])
+		member = Member.create(first_name: params[:first_name], last_name: params[:last_name], email: params[:email])
 		render :json => member
 	end
 
 	def update
 		member = Member.find(params[:id])
 
-		member.update_attributes(first_name: params[:firstname], last_name: params[:lastname], email: params[:email])
+		member.update_attributes(first_name: params[:first_name], last_name: params[:last_name], email: params[:email])
 		
 		if params[:file]
 			member.update_attributes(avatar: params[:file])

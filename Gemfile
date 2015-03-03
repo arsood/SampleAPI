@@ -17,6 +17,8 @@ gem "paperclip", "~> 4.2"
 
 gem "omniauth-facebook"
 
+gem "aws-sdk"
+
 # gem 'thin'
 
 # Use SCSS for stylesheets
