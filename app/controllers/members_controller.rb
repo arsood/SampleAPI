@@ -33,10 +33,6 @@ class MembersController < ApplicationController
 		member = Member.find(params[:id])
 
 		member.update_attributes(first_name: params[:first_name], last_name: params[:last_name], email: params[:email])
-		
-		if params[:file]
-			member.update_attributes(avatar: params[:file])
-		end
 
 		render :json => member
 	end
