@@ -16,6 +16,9 @@ Backbone::Application.routes.draw do
 
   get 'dynamicdom' => 'dynamicdom#index'
 
+  get 'reset' => 'resets#reset'
+  post 'reset' => 'resets#reset_data'
+
   #OAUTH
   get "start_auth" => "authentications#oauth_start"
   get "auth/:provider/callback" => "authentications#oauth_handler"
