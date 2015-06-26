@@ -10,17 +10,17 @@ This is a sample API written in Ruby on Rails for testing RESTful practices with
 
 ##API Endpoints
 
-###/user
+###/users
 
-`GET to /user` -> Get list of all users
+`GET to /users` -> Get list of all users
 
-`GET to /user/:id` -> Get information about specific user
+`GET to /users/:id` -> Get information about specific user
 
-`POST to /user` -> Create new user
+`POST to /users` -> Create new user
 
-`PUT to /user/:id` -> Edit a user
+`PUT to /users/:id` -> Edit a user
 
-`DELETE to /user/:id` -> Delete a user
+`DELETE to /users/:id` -> Delete a user
 
 Available Parameters:
 - `firstname`
@@ -28,17 +28,17 @@ Available Parameters:
 - `age`
 - `username`
 
-###/wine
+###/wines
 
-`GET to /wine` -> Get list of all wines
+`GET to /wines` -> Get list of all wines
 
-`GET to /wine/:id` -> Get information about specific wine
+`GET to /wines/:id` -> Get information about specific wine
 
-`POST to /wine` -> Create new wine
+`POST to /wines` -> Create new wine
 
-`PUT to /wine/:id` -> Edit a wine
+`PUT to /wines/:id` -> Edit a wine
 
-`DELETE to /wine/:id` -> Delete a wine
+`DELETE to /wines/:id` -> Delete a wine
 
 Available Parameters:
 - `name`
@@ -50,22 +50,43 @@ Available Parameters:
 - `picture`
 - `price`
 
-###/book
+###/books
 
-`GET to /book` -> Get list of all books
+`GET to /books` -> Get list of all books
 
-`GET to /book/:id` -> Get information about specific book
+`GET to /books/:id` -> Get information about specific book
 
-`POST to /book` -> Create new book
+`POST to /books` -> Create new book
 
-`PUT to /book/:id` -> Edit a book
+`PUT to /books/:id` -> Edit a book
 
-`DELETE to /book/:id` -> Delete a book
+`DELETE to /books/:id` -> Delete a book
 
 Available Parameters:
 - `title`
 - `author`
 - `release_date`
+- `image`
+
+###/members
+
+`GET to /members` -> Get list of members
+
+`GET to /members/:id` -> Get information about specific member
+
+`POST to /members` -> Create new member
+
+`PUT to /members/:id` -> Update a member
+
+`DELETE to /members/:id` -> Delete a member
+
+`POST to /members/:id/photo` -> Upload an avatar photo for a member
+
+Available Parameters:
+- `first_name`
+- `last_name`
+- `email`
+- `avatar`
 
 ###/dynamicdom
 
