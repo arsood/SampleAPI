@@ -93,3 +93,7 @@ Available Parameters:
 This is to test event binding to dynamic dom elements using AJAX.
 
 `GET to /dynamicdom` -> Get dynamic HTML returned
+
+###/reset
+
+This route displays a button that when clicked resets all of the seed data in the database.
