@@ -18,7 +18,13 @@ class WinesController < ApplicationController
 		new_wine.country = params[:country]
 		new_wine.region = params[:region]
 		new_wine.description = params[:description]
-		new_wine.picture = "https://s3-us-west-2.amazonaws.com/sandboxapi/placeholder.jpg"
+		
+		if params[:picture]
+			new_wine.picture = params[:picture]
+		else
+			new_wine.picture = "https://s3-us-west-2.amazonaws.com/sandboxapi/placeholder.jpg"
+		end
+
 		new_wine.price = params[:price]
 		
 		if new_wine.save
@@ -39,7 +45,13 @@ class WinesController < ApplicationController
 		new_wine.country = params[:country]
 		new_wine.region = params[:region]
 		new_wine.description = params[:description]
-		# new_wine.picture = params[:picture]
+		
+		if params[:picture]
+			new_wine.picture = params[:picture]
+		else
+			new_wine.picture = "https://s3-us-west-2.amazonaws.com/sandboxapi/placeholder.jpg"
+		end
+		
 		new_wine.price = params[:price]
 		
 		if new_wine.save
